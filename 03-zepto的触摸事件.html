@@ -12,14 +12,14 @@
             margin: 0;
             box-sizing: border-box;
         }
-
+        
         li {
             list-style: none;
             border-bottom: 1px solid #ccc;
             padding: 10px;
             display: flex;
         }
-
+        
         span {
             background-color: red;
             color: #fff;
@@ -33,6 +33,7 @@
 
 <body>
     <div id="box">
+        付沐收
         <ul>
             <li>
                 社会新闻
@@ -50,14 +51,14 @@
     <script src="./src/event.js"></script>
     <script src="./src/touch.js"></script>
     <script>
-        $(function () {
+        $(function() {
             // $('#box li').swipeLeft(function () {
             //     console.log(2)
             // })
-            $('#box li').swipeLeft(function () {
+            $('#box li').swipeLeft(function() {
                 $(this).find('span').show()
             })
-            $('span').tap(function () {
+            $('span').tap(function() {
                 $(this).parent().hide()
             })
         })
